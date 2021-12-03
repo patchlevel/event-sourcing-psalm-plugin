@@ -16,6 +16,5 @@ composer require patchlevel/event-sourcing-psalm-plugin
 ```xml
     <plugins>
         <pluginClass class="Patchlevel\EventSourcing\Tool\Psalm\Plugin"/>
-        <pluginClass class="Psalm\PhpUnitPlugin\Plugin"/>
     </plugins>
 ```
