@@ -8,13 +8,13 @@ psalm plugin for [event-sourcing](https://github.com/patchlevel/event-sourcing) 
 ## installation
 
 ```
-composer require patchlevel/event-sourcing-psalm-plugin
+composer require --dev patchlevel/event-sourcing-psalm-plugin
 ```
 
 ## configuration plugin
 
 ```xml
     <plugins>
-        <pluginClass class="Patchlevel\EventSourcing\Tool\Psalm\Plugin"/>
+        <pluginClass class="Patchlevel\EventSourcingPsalmPlugin\Plugin"/>
     </plugins>
 ```
