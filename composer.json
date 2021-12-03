@@ -1,0 +1,42 @@
+{
+  "name": "patchlevel/event-sourcing-bundle-psalm-plugin",
+  "type": "psalm-plugin",
+  "license": "MIT",
+  "description": "psalm plugin for patchlevel/event-sourcing",
+  "keywords": [
+    "event-sourcing",
+    "psalm"
+  ],
+  "homepage": "https://github.com/patchlevel/event-sourcing-psalm-plugin",
+  "authors": [
+    {
+      "name": "Daniel Badura",
+      "email": "daniel.badura@patchlevel.de"
+    },
+    {
+      "name": "David Badura",
+      "email": "david.badura@patchlevel.de"
+    }
+  ],
+  "require": {
+    "php": "^7.4|^8.0",
+    "vimeo/psalm": "^4.0.0"
+  },
+  "require-dev": {
+    "patchlevel/coding-standard": "^1.1.1",
+    "patchlevel/event-sourcing": "1.0.0-alpha2",
+    "roave/security-advisories": "dev-master",
+    "symfony/var-dumper": "^5.3.11"
+  },
+  "config": {
+    "preferred-install": {
+      "*": "dist"
+    },
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Patchlevel\\EventSourcingPsalmPlugin\\": "src/"
+    }
+  }
+}
