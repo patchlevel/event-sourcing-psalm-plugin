@@ -1,5 +1,5 @@
 {
-  "name": "patchlevel/event-sourcing-bundle-psalm-plugin",
+  "name": "patchlevel/event-sourcing-psalm-plugin",
   "type": "psalm-plugin",
   "license": "MIT",
   "description": "psalm plugin for patchlevel/event-sourcing",
