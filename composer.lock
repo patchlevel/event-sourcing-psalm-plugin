@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3149c73b717554d52b84016c2cfe8391",
+    "content-hash": "08e025e21360a2cc825f135c6005b9c0",
     "packages": [
         {
             "name": "amphp/amp",
@@ -2524,38 +2524,44 @@
         },
         {
             "name": "patchlevel/event-sourcing",
-            "version": "1.0.0-alpha2",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/patchlevel/event-sourcing.git",
-                "reference": "7ec9686d1f0294836097126c254d8037e91c5b4e"
+                "reference": "ba3818fef58f7959255281d90e74aabd69d598de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/patchlevel/event-sourcing/zipball/7ec9686d1f0294836097126c254d8037e91c5b4e",
-                "reference": "7ec9686d1f0294836097126c254d8037e91c5b4e",
+                "url": "https://api.github.com/repos/patchlevel/event-sourcing/zipball/ba3818fef58f7959255281d90e74aabd69d598de",
+                "reference": "ba3818fef58f7959255281d90e74aabd69d598de",
                 "shasum": ""
             },
             "require": {
-                "doctrine/dbal": "^3.1.4",
+                "doctrine/dbal": "^3.2.0",
                 "ext-json": "^7.4|^8.0",
                 "php": "^7.4|^8.0",
-                "psr/simple-cache": "^1.0.1",
-                "symfony/console": "^4.4.18|^5.1.10"
+                "psr/cache": "^1.0.1|^2.0.0",
+                "psr/simple-cache": "^1.0.1|^2.0.0"
             },
             "require-dev": {
+                "doctrine/migrations": "^3.3",
                 "ext-pdo_sqlite": "^7.4|^8.0",
                 "infection/infection": "^0.21.5",
                 "patchlevel/coding-standard": "^1.1.1",
+                "patchlevel/event-sourcing-psalm-plugin": "^1.0",
                 "phpspec/prophecy-phpunit": "^2.0.1",
                 "phpstan/phpstan": "^1.2.0",
                 "phpunit/phpunit": "^9.5.4",
+                "psalm/plugin-phpunit": "^0.16.1",
+                "symfony/console": "^4.4.18|^5.1.10",
                 "symfony/messenger": "^4.4.18|^5.1.10",
-                "symfony/var-dumper": "^5.3.11",
-                "vimeo/psalm": "^4.13.1"
+                "symfony/var-dumper": "^5.4.1",
+                "vimeo/psalm": "^4.15.0"
             },
             "suggest": {
-                "symfony/messenger": "for an advanced message bus"
+                "doctrine/migrations": "for schema migration support",
+                "symfony/console": "to use the cli commands",
+                "symfony/messenger": "for an advanced event bus"
             },
             "type": "library",
             "autoload": {
@@ -2577,16 +2583,17 @@
                     "email": "david.badura@patchlevel.de"
                 }
             ],
-            "description": "todo",
+            "description": "A lightweight and all in one event sourcing library.",
             "homepage": "https://github.com/patchlevel/event-sourcing",
             "keywords": [
+                "ddd",
                 "event-sourcing"
             ],
             "support": {
                 "issues": "https://github.com/patchlevel/event-sourcing/issues",
-                "source": "https://github.com/patchlevel/event-sourcing/tree/1.0.0-alpha2"
+                "source": "https://github.com/patchlevel/event-sourcing/tree/1.0.0"
             },
-            "time": "2021-11-29T16:12:05+00:00"
+            "time": "2021-12-16T10:37:49+00:00"
         },
         {
             "name": "phpstan/phpdoc-parser",
@@ -3373,7 +3380,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "patchlevel/event-sourcing": 15,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,
