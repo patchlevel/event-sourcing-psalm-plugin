@@ -20,7 +20,7 @@
   ],
   "require": {
     "php": "^7.4|^8.0",
-    "vimeo/psalm": "^4.18.1"
+    "vimeo/psalm": "^4.19.0"
   },
   "require-dev": {
     "patchlevel/coding-standard": "^1.1.1",
