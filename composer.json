@@ -26,7 +26,7 @@
     "patchlevel/coding-standard": "^1.1.1",
     "patchlevel/event-sourcing": "1.0.2",
     "roave/security-advisories": "dev-master",
-    "symfony/var-dumper": "^5.4.2"
+    "symfony/var-dumper": "^5.4.3"
   },
   "config": {
     "preferred-install": {
