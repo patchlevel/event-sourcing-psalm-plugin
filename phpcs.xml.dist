@@ -11,5 +11,6 @@
     <file>src</file>
 
     <rule ref="PatchlevelCodingStandard">
+        <exclude name="Squiz.NamingConventions.ValidVariableName.MemberNotCamelCaps"/>
     </rule>
 </ruleset>
