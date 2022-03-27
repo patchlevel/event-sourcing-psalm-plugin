@@ -18,11 +18,13 @@ class SuppressAggregateRoot implements AfterClassLikeVisitInterface
         $storage = $event->getStorage();
 
         if (
-            $storage->user_defined
-            && !$storage->is_interface
-            && in_array($storage->parent_class, [AggregateRoot::class, SnapshotableAggregateRoot::class], true)
+            !$storage->user_defined
+            || $storage->is_interface
+            || !in_array($storage->parent_class, [AggregateRoot::class, SnapshotableAggregateRoot::class], true)
         ) {
-            $storage->suppressed_issues[] = 'PropertyNotSetInConstructor';
+            return;
         }
+
+        $storage->suppressed_issues[] = 'PropertyNotSetInConstructor';
     }
 }
