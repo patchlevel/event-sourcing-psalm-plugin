@@ -2,5 +2,8 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "local>patchlevel/.github:renovate-config"
-  ]
+  ],
+  "constraints": {
+    "php": "~8.1"
+  }
 }
