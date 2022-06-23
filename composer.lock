@@ -2527,16 +2527,16 @@
         },
         {
             "name": "patchlevel/event-sourcing",
-            "version": "1.2.1",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/patchlevel/event-sourcing.git",
-                "reference": "17db5903f64bc545871ecebc18b360711db4cc0e"
+                "reference": "6c334bf9c03ea96c38fb4d43c53d87540c17ab89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/patchlevel/event-sourcing/zipball/17db5903f64bc545871ecebc18b360711db4cc0e",
-                "reference": "17db5903f64bc545871ecebc18b360711db4cc0e",
+                "url": "https://api.github.com/repos/patchlevel/event-sourcing/zipball/6c334bf9c03ea96c38fb4d43c53d87540c17ab89",
+                "reference": "6c334bf9c03ea96c38fb4d43c53d87540c17ab89",
                 "shasum": ""
             },
             "require": {
@@ -2553,18 +2553,19 @@
             "require-dev": {
                 "doctrine/migrations": "^3.3.2",
                 "ext-pdo_sqlite": "~8.0.0|~8.1.0",
-                "infection/infection": "^0.25.5",
+                "infection/infection": "^0.26.0",
                 "patchlevel/coding-standard": "^1.1.1",
                 "patchlevel/event-sourcing-psalm-plugin": "^1.0.0",
-                "phpbench/phpbench": "^1.2",
+                "phpbench/phpbench": "^1.2.3",
                 "phpspec/prophecy-phpunit": "^2.0.1",
-                "phpstan/phpstan": "^1.2.0",
+                "phpstan/phpstan": "^1.4.3",
                 "phpunit/phpunit": "^9.5.10",
                 "psalm/plugin-phpunit": "^0.16.1",
+                "roave/infection-static-analysis-plugin": "^1.14.0",
                 "symfony/console": "^4.4.34|^5.4.1|^6.0.1",
                 "symfony/messenger": "^4.4.34|^5.4.0|^6.0.1",
                 "symfony/var-dumper": "^5.4.1|^6.0.1",
-                "vimeo/psalm": "^4.15.0"
+                "vimeo/psalm": "^4.19.0"
             },
             "suggest": {
                 "doctrine/migrations": "for schema migration support",
@@ -2599,9 +2600,9 @@
             ],
             "support": {
                 "issues": "https://github.com/patchlevel/event-sourcing/issues",
-                "source": "https://github.com/patchlevel/event-sourcing/tree/1.2.1"
+                "source": "https://github.com/patchlevel/event-sourcing/tree/1.3.0"
             },
-            "time": "2022-01-19T09:51:41+00:00"
+            "time": "2022-06-20T08:36:29+00:00"
         },
         {
             "name": "phpstan/phpdoc-parser",
@@ -2754,12 +2755,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "0a2664d739af6996ce1a24a35cb59ed2bbd27f4b"
+                "reference": "421c87fea10ccffa30d647dcda20e3f9f7cacef8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/0a2664d739af6996ce1a24a35cb59ed2bbd27f4b",
-                "reference": "0a2664d739af6996ce1a24a35cb59ed2bbd27f4b",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/421c87fea10ccffa30d647dcda20e3f9f7cacef8",
+                "reference": "421c87fea10ccffa30d647dcda20e3f9f7cacef8",
                 "shasum": ""
             },
             "conflict": {
@@ -2900,7 +2901,7 @@
                 "gree/jose": "<=2.2",
                 "gregwar/rst": "<1.0.3",
                 "grumpydictator/firefly-iii": "<5.6.5",
-                "guzzlehttp/guzzle": "<6.5.7|>=7,<7.4.4",
+                "guzzlehttp/guzzle": "<6.5.8|>=7,<7.4.5",
                 "guzzlehttp/psr7": "<1.8.4|>=2,<2.1.1",
                 "helloxz/imgurl": "= 2.31|<=2.31",
                 "hillelcoren/invoice-ninja": "<5.3.35",
@@ -2932,6 +2933,7 @@
                 "kevinpapst/kimai2": "<1.16.7",
                 "kitodo/presentation": "<3.1.2",
                 "klaviyo/magento2-extension": ">=1,<3",
+                "krayin/laravel-crm": "<1.2.2",
                 "kreait/firebase-php": ">=3.2,<3.8.1",
                 "la-haute-societe/tcpdf": "<6.2.22",
                 "laminas/laminas-form": "<2.17.1|>=3,<3.0.2|>=3.1,<3.1.1",
@@ -3021,7 +3023,7 @@
                 "phpwhois/phpwhois": "<=4.2.5",
                 "phpxmlrpc/extras": "<0.6.1",
                 "pimcore/data-hub": "<1.2.4",
-                "pimcore/pimcore": "<10.4",
+                "pimcore/pimcore": "<10.4.4",
                 "pocketmine/bedrock-protocol": "<8.0.2",
                 "pocketmine/pocketmine-mp": ">= 4.0.0-BETA5, < 4.4.2|<4.2.10",
                 "pressbooks/pressbooks": "<5.18",
@@ -3055,7 +3057,7 @@
                 "shopware/core": "<=6.4.9",
                 "shopware/platform": "<=6.4.9",
                 "shopware/production": "<=6.3.5.2",
-                "shopware/shopware": "<5.7.9",
+                "shopware/shopware": "<5.7.12",
                 "shopware/storefront": "<=6.4.8.1",
                 "shopxo/shopxo": "<2.2.6",
                 "showdoc/showdoc": "<2.10.4",
@@ -3246,7 +3248,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-06-17T21:04:24+00:00"
+            "time": "2022-06-22T19:04:00+00:00"
         },
         {
             "name": "slevomat/coding-standard",
