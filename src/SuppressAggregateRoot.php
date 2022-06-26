@@ -5,11 +5,8 @@ declare(strict_types=1);
 namespace Patchlevel\EventSourcingPsalmPlugin;
 
 use Patchlevel\EventSourcing\Aggregate\AggregateRoot;
-use Patchlevel\EventSourcing\Aggregate\SnapshotableAggregateRoot;
 use Psalm\Plugin\EventHandler\AfterClassLikeVisitInterface;
 use Psalm\Plugin\EventHandler\Event\AfterClassLikeVisitEvent;
-
-use function in_array;
 
 class SuppressAggregateRoot implements AfterClassLikeVisitInterface
 {
@@ -20,7 +17,7 @@ class SuppressAggregateRoot implements AfterClassLikeVisitInterface
         if (
             !$storage->user_defined
             || $storage->is_interface
-            || !in_array($storage->parent_class, [AggregateRoot::class, SnapshotableAggregateRoot::class], true)
+            || $storage->parent_class !== AggregateRoot::class
         ) {
             return;
         }

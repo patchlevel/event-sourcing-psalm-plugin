@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8364524f75d8e42733f25f4d7d905c86",
+    "content-hash": "9bd550ac7636e35d00bc6d9898bccec0",
     "packages": [
         {
             "name": "amphp/amp",
@@ -2472,23 +2472,23 @@
         },
         {
             "name": "patchlevel/coding-standard",
-            "version": "1.1.1",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/patchlevel/coding-standard.git",
-                "reference": "2d740eb96431e895feee692b01a86fb75f7b7691"
+                "reference": "74a750409168b8735bec79deaa2135710bc75105"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/patchlevel/coding-standard/zipball/2d740eb96431e895feee692b01a86fb75f7b7691",
-                "reference": "2d740eb96431e895feee692b01a86fb75f7b7691",
+                "url": "https://api.github.com/repos/patchlevel/coding-standard/zipball/74a750409168b8735bec79deaa2135710bc75105",
+                "reference": "74a750409168b8735bec79deaa2135710bc75105",
                 "shasum": ""
             },
             "require": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
                 "php": "^7.4 || ^8.0",
-                "slevomat/coding-standard": "^7.0.10",
-                "squizlabs/php_codesniffer": "^3.6.0"
+                "slevomat/coding-standard": "^8.1.0",
+                "squizlabs/php_codesniffer": "^3.7.1"
             },
             "type": "phpcodesniffer-standard",
             "notification-url": "https://packagist.org/downloads/",
@@ -2521,29 +2521,31 @@
             ],
             "support": {
                 "issues": "https://github.com/patchlevel/coding-standard/issues",
-                "source": "https://github.com/patchlevel/coding-standard/tree/1.1.1"
+                "source": "https://github.com/patchlevel/coding-standard/tree/1.2.0"
             },
-            "time": "2021-07-13T16:10:15+00:00"
+            "time": "2022-06-26T09:09:23+00:00"
         },
         {
             "name": "patchlevel/event-sourcing",
-            "version": "1.3.0",
+            "version": "2.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/patchlevel/event-sourcing.git",
-                "reference": "6c334bf9c03ea96c38fb4d43c53d87540c17ab89"
+                "reference": "3b1e81fa1b94b91553b42940dcfb842dc6318cf3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/patchlevel/event-sourcing/zipball/6c334bf9c03ea96c38fb4d43c53d87540c17ab89",
-                "reference": "6c334bf9c03ea96c38fb4d43c53d87540c17ab89",
+                "url": "https://api.github.com/repos/patchlevel/event-sourcing/zipball/3b1e81fa1b94b91553b42940dcfb842dc6318cf3",
+                "reference": "3b1e81fa1b94b91553b42940dcfb842dc6318cf3",
                 "shasum": ""
             },
             "require": {
                 "doctrine/dbal": "^3.2.0",
-                "php": "~8.0.0|~8.1.0",
+                "php": "~8.1.0",
                 "psr/cache": "^2.0.0|^3.0.0",
-                "psr/simple-cache": "^2.0.0|^3.0.0"
+                "psr/log": "^2.0.0|^3.0.0",
+                "psr/simple-cache": "^2.0.0|^3.0.0",
+                "symfony/finder": "^4.4.34|^5.4.0|^6.0.1"
             },
             "conflict": {
                 "doctrine/migrations": "<3.3",
@@ -2552,7 +2554,7 @@
             },
             "require-dev": {
                 "doctrine/migrations": "^3.3.2",
-                "ext-pdo_sqlite": "~8.0.0|~8.1.0",
+                "ext-pdo_sqlite": "~8.1.0",
                 "infection/infection": "^0.26.0",
                 "patchlevel/coding-standard": "^1.1.1",
                 "patchlevel/event-sourcing-psalm-plugin": "^1.0.0",
@@ -2560,18 +2562,19 @@
                 "phpspec/prophecy-phpunit": "^2.0.1",
                 "phpstan/phpstan": "^1.4.3",
                 "phpunit/phpunit": "^9.5.10",
-                "psalm/plugin-phpunit": "^0.16.1",
+                "psalm/plugin-phpunit": "^0.17.0",
                 "roave/infection-static-analysis-plugin": "^1.14.0",
                 "symfony/console": "^4.4.34|^5.4.1|^6.0.1",
                 "symfony/messenger": "^4.4.34|^5.4.0|^6.0.1",
                 "symfony/var-dumper": "^5.4.1|^6.0.1",
-                "vimeo/psalm": "^4.19.0"
+                "vimeo/psalm": "^4.22.0"
             },
             "suggest": {
                 "doctrine/migrations": "for schema migration support",
                 "symfony/console": "to use the cli commands",
                 "symfony/messenger": "for an advanced event bus"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -2600,9 +2603,9 @@
             ],
             "support": {
                 "issues": "https://github.com/patchlevel/event-sourcing/issues",
-                "source": "https://github.com/patchlevel/event-sourcing/tree/1.3.0"
+                "source": "https://github.com/patchlevel/event-sourcing/tree/2.0.x"
             },
-            "time": "2022-06-20T08:36:29+00:00"
+            "time": "2022-06-26T09:11:35+00:00"
         },
         {
             "name": "phpstan/phpdoc-parser",
@@ -2755,12 +2758,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "a66635bf19583447f296db28180762367690ac5a"
+                "reference": "880f953435f266cf634bb81fa8888e66fa7814f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/a66635bf19583447f296db28180762367690ac5a",
-                "reference": "a66635bf19583447f296db28180762367690ac5a",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/880f953435f266cf634bb81fa8888e66fa7814f6",
+                "reference": "880f953435f266cf634bb81fa8888e66fa7814f6",
                 "shasum": ""
             },
             "conflict": {
@@ -3028,6 +3031,7 @@
                 "pocketmine/pocketmine-mp": ">= 4.0.0-BETA5, < 4.4.2|<4.2.10",
                 "pressbooks/pressbooks": "<5.18",
                 "prestashop/autoupgrade": ">=4,<4.10.1",
+                "prestashop/blockwishlist": ">=2,<2.1.1",
                 "prestashop/contactform": ">1.0.1,<4.3",
                 "prestashop/gamification": "<2.3.2",
                 "prestashop/prestashop": ">=1.7,<=1.7.8.2",
@@ -3248,36 +3252,36 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-06-23T07:04:20+00:00"
+            "time": "2022-06-25T08:04:47+00:00"
         },
         {
             "name": "slevomat/coding-standard",
-            "version": "7.2.1",
+            "version": "8.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/slevomat/coding-standard.git",
-                "reference": "aff06ae7a84e4534bf6f821dc982a93a5d477c90"
+                "reference": "bf55f29a3f146146745c4c3c43c2cfea64af64ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/slevomat/coding-standard/zipball/aff06ae7a84e4534bf6f821dc982a93a5d477c90",
-                "reference": "aff06ae7a84e4534bf6f821dc982a93a5d477c90",
+                "url": "https://api.github.com/repos/slevomat/coding-standard/zipball/bf55f29a3f146146745c4c3c43c2cfea64af64ee",
+                "reference": "bf55f29a3f146146745c4c3c43c2cfea64af64ee",
                 "shasum": ""
             },
             "require": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2 || ^0.7",
                 "php": "^7.2 || ^8.0",
-                "phpstan/phpdoc-parser": "^1.5.1",
-                "squizlabs/php_codesniffer": "^3.6.2"
+                "phpstan/phpdoc-parser": "^1.6.2",
+                "squizlabs/php_codesniffer": "^3.7.1"
             },
             "require-dev": {
                 "phing/phing": "2.17.3",
                 "php-parallel-lint/php-parallel-lint": "1.3.2",
-                "phpstan/phpstan": "1.4.10|1.7.1",
+                "phpstan/phpstan": "1.4.10|1.7.15",
                 "phpstan/phpstan-deprecation-rules": "1.0.0",
                 "phpstan/phpstan-phpunit": "1.0.0|1.1.1",
                 "phpstan/phpstan-strict-rules": "1.2.3",
-                "phpunit/phpunit": "7.5.20|8.5.21|9.5.20"
+                "phpunit/phpunit": "7.5.20|8.5.21|9.5.21"
             },
             "type": "phpcodesniffer-standard",
             "extra": {
@@ -3297,7 +3301,7 @@
             "description": "Slevomat Coding Standard for PHP_CodeSniffer complements Consistence Coding Standard by providing sniffs with additional checks.",
             "support": {
                 "issues": "https://github.com/slevomat/coding-standard/issues",
-                "source": "https://github.com/slevomat/coding-standard/tree/7.2.1"
+                "source": "https://github.com/slevomat/coding-standard/tree/8.1.0"
             },
             "funding": [
                 {
@@ -3309,7 +3313,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-25T10:58:12+00:00"
+            "time": "2022-06-24T11:30:55+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -3368,33 +3372,96 @@
             "time": "2022-06-18T07:21:10+00:00"
         },
         {
-            "name": "symfony/var-dumper",
-            "version": "v5.4.9",
+            "name": "symfony/finder",
+            "version": "v6.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "af52239a330fafd192c773795520dc2dd62b5657"
+                "url": "https://github.com/symfony/finder.git",
+                "reference": "45b8beb69d6eb3b05a65689ebfd4222326773f8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/af52239a330fafd192c773795520dc2dd62b5657",
-                "reference": "af52239a330fafd192c773795520dc2dd62b5657",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/45b8beb69d6eb3b05a65689ebfd4222326773f8f",
+                "reference": "45b8beb69d6eb3b05a65689ebfd4222326773f8f",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.2.5",
-                "symfony/polyfill-mbstring": "~1.0",
-                "symfony/polyfill-php80": "^1.16"
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "symfony/filesystem": "^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Finder\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Finds files and directories via an intuitive fluent interface",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/finder/tree/v6.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-04-15T08:08:08+00:00"
+        },
+        {
+            "name": "symfony/var-dumper",
+            "version": "v6.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/var-dumper.git",
+                "reference": "98587d939cb783aa04e828e8fa857edaca24c212"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/98587d939cb783aa04e828e8fa857edaca24c212",
+                "reference": "98587d939cb783aa04e828e8fa857edaca24c212",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "symfony/polyfill-mbstring": "~1.0"
             },
             "conflict": {
                 "phpunit/phpunit": "<5.4.3",
-                "symfony/console": "<4.4"
+                "symfony/console": "<5.4"
             },
             "require-dev": {
                 "ext-iconv": "*",
-                "symfony/console": "^4.4|^5.0|^6.0",
-                "symfony/process": "^4.4|^5.0|^6.0",
-                "symfony/uid": "^5.1|^6.0",
+                "symfony/console": "^5.4|^6.0",
+                "symfony/process": "^5.4|^6.0",
+                "symfony/uid": "^5.4|^6.0",
                 "twig/twig": "^2.13|^3.0.4"
             },
             "suggest": {
@@ -3438,7 +3505,7 @@
                 "dump"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v5.4.9"
+                "source": "https://github.com/symfony/var-dumper/tree/v6.1.0"
             },
             "funding": [
                 {
@@ -3454,19 +3521,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-21T10:24:18+00:00"
+            "time": "2022-05-21T13:34:40+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "patchlevel/event-sourcing": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.4|^8.0"
+        "php": "^8.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }
