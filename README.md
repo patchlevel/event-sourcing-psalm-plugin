@@ -9,12 +9,5 @@ psalm plugin for [event-sourcing](https://github.com/patchlevel/event-sourcing) 
 
 ```
 composer require --dev patchlevel/event-sourcing-psalm-plugin
-```
-
-## configuration plugin
-
-```xml
-    <plugins>
-        <pluginClass class="Patchlevel\EventSourcingPsalmPlugin\Plugin"/>
-    </plugins>
+vendor/bin/psalm-plugin enable cspray/phinal
 ```
