@@ -9,5 +9,5 @@ psalm plugin for [event-sourcing](https://github.com/patchlevel/event-sourcing) 
 
 ```
 composer require --dev patchlevel/event-sourcing-psalm-plugin
-vendor/bin/psalm-plugin enable patchlevel/event-sourcing-psalm-plugin
+vendor/bin/psalm-plugin enable Patchlevel\EventSourcingPsalmPlugin\Plugin
 ```
