@@ -2528,12 +2528,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/patchlevel/event-sourcing.git",
-                "reference": "26f77f378063db1c5fba676d81f34d9e136f06f9"
+                "reference": "bd928ac7dff5e85eb30b128b4b4fa291c6cadb81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/patchlevel/event-sourcing/zipball/26f77f378063db1c5fba676d81f34d9e136f06f9",
-                "reference": "26f77f378063db1c5fba676d81f34d9e136f06f9",
+                "url": "https://api.github.com/repos/patchlevel/event-sourcing/zipball/bd928ac7dff5e85eb30b128b4b4fa291c6cadb81",
+                "reference": "bd928ac7dff5e85eb30b128b4b4fa291c6cadb81",
                 "shasum": ""
             },
             "require": {
@@ -2601,7 +2601,7 @@
                 "issues": "https://github.com/patchlevel/event-sourcing/issues",
                 "source": "https://github.com/patchlevel/event-sourcing/tree/2.0.x"
             },
-            "time": "2022-07-29T13:33:10+00:00"
+            "time": "2022-08-03T14:23:45+00:00"
         },
         {
             "name": "phpstan/phpdoc-parser",
