@@ -2534,12 +2534,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/patchlevel/event-sourcing.git",
-                "reference": "bd928ac7dff5e85eb30b128b4b4fa291c6cadb81"
+                "reference": "7e17b93a1b6fdad9e83b17fe5102e4121ab02c96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/patchlevel/event-sourcing/zipball/bd928ac7dff5e85eb30b128b4b4fa291c6cadb81",
-                "reference": "bd928ac7dff5e85eb30b128b4b4fa291c6cadb81",
+                "url": "https://api.github.com/repos/patchlevel/event-sourcing/zipball/7e17b93a1b6fdad9e83b17fe5102e4121ab02c96",
+                "reference": "7e17b93a1b6fdad9e83b17fe5102e4121ab02c96",
                 "shasum": ""
             },
             "require": {
@@ -2607,7 +2607,7 @@
                 "issues": "https://github.com/patchlevel/event-sourcing/issues",
                 "source": "https://github.com/patchlevel/event-sourcing/tree/2.0.x"
             },
-            "time": "2022-08-03T14:23:45+00:00"
+            "time": "2022-10-26T17:14:34+00:00"
         },
         {
             "name": "phpstan/phpdoc-parser",
@@ -2760,12 +2760,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "599b9d6746e56b67b187afed175dd02fb1a288fa"
+                "reference": "d55c618dc2c5141caa00a416ca21bb6f06cf00e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/599b9d6746e56b67b187afed175dd02fb1a288fa",
-                "reference": "599b9d6746e56b67b187afed175dd02fb1a288fa",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/d55c618dc2c5141caa00a416ca21bb6f06cf00e0",
+                "reference": "d55c618dc2c5141caa00a416ca21bb6f06cf00e0",
                 "shasum": ""
             },
             "conflict": {
@@ -2788,6 +2788,7 @@
                 "asymmetricrypt/asymmetricrypt": ">=0,<9.9.99",
                 "awesome-support/awesome-support": "<=6.0.7",
                 "aws/aws-sdk-php": ">=3,<3.2.1",
+                "badaso/core": "<2.6.1",
                 "bagisto/bagisto": "<0.1.5",
                 "barrelstrength/sprout-base-email": "<1.2.7",
                 "barrelstrength/sprout-forms": "<3.9",
@@ -2943,6 +2944,7 @@
                 "joomla/filter": "<1.4.4|>=2,<2.0.1",
                 "joomla/input": ">=2,<2.0.2",
                 "joomla/session": "<1.3.1",
+                "joyqi/hyper-down": "<=2.4.27",
                 "jsdecena/laracom": "<2.0.9",
                 "jsmitty12/phpwhois": "<5.1",
                 "kazist/phpwhois": "<=4.2.6",
@@ -3281,7 +3283,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-10-24T19:11:20+00:00"
+            "time": "2022-10-27T00:18:37+00:00"
         },
         {
             "name": "slevomat/coding-standard",
