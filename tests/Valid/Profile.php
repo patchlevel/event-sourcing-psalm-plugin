@@ -1,15 +1,18 @@
 <?php
 
-namespace Tests\Valid;
+namespace Patchlevel\EventSourcingPsalmPlugin\Tests\Valid;
 
-use Patchlevel\EventSourcing\Aggregate\AggregateRoot;
+use Patchlevel\EventSourcing\Aggregate\BasicAggregateRoot;
+use Patchlevel\EventSourcing\Aggregate\Uuid;
+use Patchlevel\EventSourcing\Attribute\Id;
 
-class Profile extends AggregateRoot
+class Profile extends BasicAggregateRoot
 {
-    private string $id;
+    #[Id]
+    private Uuid $id;
     private string $name;
 
-    public static function create(string $id, string $name): self
+    public static function create(Uuid $id, string $name): self
     {
         $self = new self();
 
@@ -24,7 +27,7 @@ class Profile extends AggregateRoot
         $this->name = $event->name;
     }
 
-    public function id(): string
+    public function id(): Uuid
     {
         return $this->id;
     }
@@ -32,10 +35,5 @@ class Profile extends AggregateRoot
     public function name(): string
     {
         return $this->name;
-    }
-
-    public function aggregateRootId(): string
-    {
-        return $this->id;
     }
 }

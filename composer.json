@@ -20,13 +20,14 @@
   ],
   "require": {
     "php": "^8.1",
-    "vimeo/psalm": "^4.23.0 || ^5.0.0"
+    "vimeo/psalm": "^5.0.0",
+    "ext-simplexml": "*"
   },
   "require-dev": {
-    "patchlevel/coding-standard": "^1.1.1",
-    "patchlevel/event-sourcing": "2.0.x-dev",
+    "patchlevel/coding-standard": "^1.2.0",
+    "patchlevel/event-sourcing": "3.0.0-rc3",
     "roave/security-advisories": "dev-master",
-    "symfony/var-dumper": "^6.1.0"
+    "symfony/var-dumper": "^6.4.0"
   },
   "config": {
     "preferred-install": {
@@ -40,6 +41,11 @@
   "autoload": {
     "psr-4": {
       "Patchlevel\\EventSourcingPsalmPlugin\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Patchlevel\\EventSourcingPsalmPlugin\\Tests\\": "tests/"
     }
   }
 }

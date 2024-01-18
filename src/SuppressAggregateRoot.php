@@ -17,7 +17,7 @@ class SuppressAggregateRoot implements AfterClassLikeVisitInterface
         if (
             !$storage->user_defined
             || $storage->is_interface
-            || $storage->parent_class !== AggregateRoot::class
+            || !is_a($storage->name, AggregateRoot::class, true)
         ) {
             return;
         }

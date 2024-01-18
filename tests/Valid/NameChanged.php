@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Valid;
+namespace Patchlevel\EventSourcingPsalmPlugin\Tests\Valid;
 
 class NameChanged
 {

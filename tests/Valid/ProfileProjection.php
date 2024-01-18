@@ -1,14 +1,13 @@
 <?php
 
-namespace Tests\Valid;
+namespace Patchlevel\EventSourcingPsalmPlugin\Tests\Valid;
 
-use Patchlevel\EventSourcing\Attribute\Handle;
+use Patchlevel\EventSourcing\Attribute\Subscribe;
 use Patchlevel\EventSourcing\EventBus\Message;
-use Patchlevel\EventSourcing\Projection\Projection;
 
-class ProfileProjection implements Projection
+class ProfileProjection
 {
-    #[Handle(ProfileCreated::class)]
+    #[Subscribe(ProfileCreated::class)]
     public function handleProfileCreated(Message $message): void
     {
         $event = $message->event();
@@ -16,8 +15,8 @@ class ProfileProjection implements Projection
         echo $event->name;
     }
 
-    #[Handle(ProfileCreated::class)]
-    #[Handle(NameChanged::class)]
+    #[Subscribe(ProfileCreated::class)]
+    #[Subscribe(NameChanged::class)]
     public function handleMultiple(Message $message): void
     {
         $event = $message->event();
