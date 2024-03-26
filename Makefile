@@ -20,6 +20,10 @@ phpstan: vendor                                                                 
 psalm: vendor                                                                   ## run psalm static code analyser
 	vendor/bin/psalm
 
+.PHONY: psalm-baseline
+psalm-baseline: vendor                                                          ## run psalm static code analyser
+	vendor/bin/psalm --update-baseline --set-baseline=baseline.xml
+
 .PHONY: phpunit
 phpunit: vendor                                                                 ## run phpunit tests
 	vendor/bin/phpunit --testdox --colors=always -v $(OPTIONS)

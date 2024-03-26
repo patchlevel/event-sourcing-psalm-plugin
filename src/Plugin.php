@@ -19,5 +19,8 @@ class Plugin implements PluginEntryPointInterface
 
         class_exists(ProjectionHandleProvider::class);
         $registration->registerHooksFromClass(ProjectionHandleProvider::class);
+
+        class_exists(ProjectorHandleProvider::class);
+        $registration->registerHooksFromClass(ProjectorHandleProvider::class);
     }
 }
