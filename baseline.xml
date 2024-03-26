@@ -1,13 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="5.23.1@8471a896ccea3526b26d082f4461eeea467f10a4">
-  <file src="tests/valid/ProfileProjection.php">
-    <DeprecatedInterface>
-      <code><![CDATA[ProfileProjection]]></code>
-    </DeprecatedInterface>
-  </file>
-  <file src="tests/valid/ProfileProjectionUsingProjector.php">
-    <DeprecatedInterface>
-      <code><![CDATA[ProfileProjectionUsingProjector]]></code>
-    </DeprecatedInterface>
-  </file>
-</files>
+<files psalm-version="5.23.1@8471a896ccea3526b26d082f4461eeea467f10a4"/>

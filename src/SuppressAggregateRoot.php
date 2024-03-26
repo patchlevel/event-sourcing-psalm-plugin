@@ -8,6 +8,8 @@ use Patchlevel\EventSourcing\Aggregate\AggregateRoot;
 use Psalm\Plugin\EventHandler\AfterClassLikeVisitInterface;
 use Psalm\Plugin\EventHandler\Event\AfterClassLikeVisitEvent;
 
+use function is_a;
+
 class SuppressAggregateRoot implements AfterClassLikeVisitInterface
 {
     public static function afterClassLikeVisit(AfterClassLikeVisitEvent $event): void

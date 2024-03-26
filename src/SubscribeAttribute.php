@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Patchlevel\EventSourcingPsalmPlugin;
 
 use Patchlevel\EventSourcing\Attribute\Subscribe;
-use Patchlevel\EventSourcing\EventBus\Message;
+use Patchlevel\EventSourcing\Message\Message;
 use Psalm\Plugin\EventHandler\AfterClassLikeVisitInterface;
 use Psalm\Plugin\EventHandler\Event\AfterClassLikeVisitEvent;
 use Psalm\Storage\MethodStorage;

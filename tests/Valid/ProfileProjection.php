@@ -3,7 +3,7 @@
 namespace Patchlevel\EventSourcingPsalmPlugin\Tests\Valid;
 
 use Patchlevel\EventSourcing\Attribute\Subscribe;
-use Patchlevel\EventSourcing\EventBus\Message;
+use Patchlevel\EventSourcing\Message\Message;
 
 class ProfileProjection
 {
