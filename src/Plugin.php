@@ -12,7 +12,7 @@ use function class_exists;
 
 class Plugin implements PluginEntryPointInterface
 {
-    public function __invoke(RegistrationInterface $registration, ?SimpleXMLElement $config = null): void
+    public function __invoke(RegistrationInterface $registration, SimpleXMLElement|null $config = null): void
     {
         class_exists(SuppressAggregateRoot::class);
         $registration->registerHooksFromClass(SuppressAggregateRoot::class);

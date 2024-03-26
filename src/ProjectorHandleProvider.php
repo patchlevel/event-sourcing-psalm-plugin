@@ -51,9 +51,7 @@ class ProjectorHandleProvider implements AfterClassLikeVisitInterface
         }
     }
 
-    /**
-     * @return list<TNamedObject>
-     */
+    /** @return list<TNamedObject> */
     private static function handledEvents(MethodStorage $method): array
     {
         $events = [];
@@ -87,7 +85,7 @@ class ProjectorHandleProvider implements AfterClassLikeVisitInterface
         return $events;
     }
 
-    private static function firstAtomicType(Type\Union $union): ?Type\Atomic
+    private static function firstAtomicType(Type\Union $union): Type\Atomic|null
     {
         $types = array_values($union->getAtomicTypes());
 
