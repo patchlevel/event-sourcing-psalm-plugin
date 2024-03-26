@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Patchlevel\EventSourcingPsalmPlugin;
 
 use Patchlevel\EventSourcing\Attribute\Subscribe;
-use Patchlevel\EventSourcing\EventBus\Message;
+use Patchlevel\EventSourcing\Message\Message;
 use Psalm\Plugin\EventHandler\AfterClassLikeVisitInterface;
 use Psalm\Plugin\EventHandler\Event\AfterClassLikeVisitEvent;
 use Psalm\Storage\MethodStorage;
@@ -48,9 +48,7 @@ class SubscribeAttribute implements AfterClassLikeVisitInterface
         }
     }
 
-    /**
-     * @return list<TNamedObject>
-     */
+    /** @return list<TNamedObject> */
     private static function handledEvents(MethodStorage $method): array
     {
         $events = [];
@@ -84,7 +82,7 @@ class SubscribeAttribute implements AfterClassLikeVisitInterface
         return $events;
     }
 
-    private static function firstAtomicType(Type\Union $union): ?Type\Atomic
+    private static function firstAtomicType(Type\Union $union): Type\Atomic|null
     {
         $types = array_values($union->getAtomicTypes());
 
