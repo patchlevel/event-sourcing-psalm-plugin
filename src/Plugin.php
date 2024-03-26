@@ -17,10 +17,7 @@ class Plugin implements PluginEntryPointInterface
         class_exists(SuppressAggregateRoot::class);
         $registration->registerHooksFromClass(SuppressAggregateRoot::class);
 
-        class_exists(ProjectionHandleProvider::class);
-        $registration->registerHooksFromClass(ProjectionHandleProvider::class);
-
-        class_exists(ProjectorHandleProvider::class);
-        $registration->registerHooksFromClass(ProjectorHandleProvider::class);
+        class_exists(SubscribeAttribute::class);
+        $registration->registerHooksFromClass(SubscribeAttribute::class);
     }
 }

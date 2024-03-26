@@ -4,9 +4,8 @@ declare(strict_types=1);
 
 namespace Patchlevel\EventSourcingPsalmPlugin;
 
-use Patchlevel\EventSourcing\Attribute\Handle;
+use Patchlevel\EventSourcing\Attribute\Subscribe;
 use Patchlevel\EventSourcing\EventBus\Message;
-use Patchlevel\EventSourcing\Projection\Projection;
 use Psalm\Plugin\EventHandler\AfterClassLikeVisitInterface;
 use Psalm\Plugin\EventHandler\Event\AfterClassLikeVisitEvent;
 use Psalm\Storage\MethodStorage;
@@ -14,9 +13,8 @@ use Psalm\Type;
 use Psalm\Type\Atomic\TNamedObject;
 
 use function array_values;
-use function in_array;
 
-class ProjectionHandleProvider implements AfterClassLikeVisitInterface
+class SubscribeAttribute implements AfterClassLikeVisitInterface
 {
     public static function afterClassLikeVisit(AfterClassLikeVisitEvent $event): void
     {
@@ -25,7 +23,6 @@ class ProjectionHandleProvider implements AfterClassLikeVisitInterface
         if (
             !$storage->user_defined
             || $storage->is_interface
-            || !in_array(Projection::class, $storage->direct_class_interfaces)
         ) {
             return;
         }
@@ -57,7 +54,7 @@ class ProjectionHandleProvider implements AfterClassLikeVisitInterface
         $events = [];
 
         foreach ($method->attributes as $attribute) {
-            if ($attribute->fq_class_name !== Handle::class) {
+            if ($attribute->fq_class_name !== Subscribe::class) {
                 continue;
             }
 
