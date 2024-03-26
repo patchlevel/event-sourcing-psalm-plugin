@@ -6,7 +6,7 @@ namespace Patchlevel\EventSourcingPsalmPlugin;
 
 use Patchlevel\EventSourcing\Attribute\Handle;
 use Patchlevel\EventSourcing\EventBus\Message;
-use Patchlevel\EventSourcing\Projection\Projection;
+use Patchlevel\EventSourcing\Projection\Projector\Projector;
 use Psalm\Plugin\EventHandler\AfterClassLikeVisitInterface;
 use Psalm\Plugin\EventHandler\Event\AfterClassLikeVisitEvent;
 use Psalm\Storage\MethodStorage;
@@ -16,7 +16,7 @@ use Psalm\Type\Atomic\TNamedObject;
 use function array_values;
 use function in_array;
 
-class ProjectionHandleProvider implements AfterClassLikeVisitInterface
+class ProjectorHandleProvider implements AfterClassLikeVisitInterface
 {
     public static function afterClassLikeVisit(AfterClassLikeVisitEvent $event): void
     {
@@ -25,7 +25,7 @@ class ProjectionHandleProvider implements AfterClassLikeVisitInterface
         if (
             !$storage->user_defined
             || $storage->is_interface
-            || !in_array(Projection::class, $storage->direct_class_interfaces)
+            || !in_array(Projector::class, $storage->direct_class_interfaces)
         ) {
             return;
         }
