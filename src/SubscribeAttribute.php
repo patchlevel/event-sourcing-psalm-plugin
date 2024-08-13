@@ -34,17 +34,23 @@ class SubscribeAttribute implements AfterClassLikeVisitInterface
                 continue;
             }
 
-            $param = $method->params[0] ?? null;
+            foreach ($method->params as $param) {
+                if ($param->type === null) {
+                    continue;
+                }
 
-            if (!$param) {
-                continue;
+                foreach ($param->type->getAtomicTypes() as $atomicType) {
+                    if ($atomicType instanceof TNamedObject && $atomicType->value === Message::class) {
+                        $param->type = new Type\Union([
+                            new Type\Atomic\TGenericObject(Message::class, [
+                                new Type\Union($events),
+                            ]),
+                        ]);
+
+                        break;
+                    }
+                }
             }
-
-            $param->type = new Type\Union([
-                new Type\Atomic\TGenericObject(Message::class, [
-                    new Type\Union($events),
-                ]),
-            ]);
         }
     }
 
