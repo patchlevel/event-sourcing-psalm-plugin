@@ -17,8 +17,8 @@ class Plugin implements PluginEntryPointInterface
         class_exists(SuppressAggregateRoot::class);
         $registration->registerHooksFromClass(SuppressAggregateRoot::class);
 
-        //class_exists(SuppressChildAggregate::class);
-        //$registration->registerHooksFromClass(SuppressChildAggregate::class);
+        class_exists(SuppressChildAggregate::class);
+        $registration->registerHooksFromClass(SuppressChildAggregate::class);
 
         class_exists(SubscribeAttribute::class);
         $registration->registerHooksFromClass(SubscribeAttribute::class);
