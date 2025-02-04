@@ -4,6 +4,7 @@ namespace Patchlevel\EventSourcingPsalmPlugin\Tests\Valid;
 
 use Patchlevel\EventSourcing\Aggregate\BasicAggregateRoot;
 use Patchlevel\EventSourcing\Aggregate\Uuid;
+use Patchlevel\EventSourcing\Attribute\Apply;
 use Patchlevel\EventSourcing\Attribute\Id;
 
 class Profile extends BasicAggregateRoot
@@ -21,6 +22,7 @@ class Profile extends BasicAggregateRoot
         return $self;
     }
 
+    #[Apply]
     protected function applyProfileCreated(ProfileCreated $event): void
     {
         $this->id = $event->id;
