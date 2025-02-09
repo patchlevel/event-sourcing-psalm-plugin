@@ -1,2 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="5.23.1@8471a896ccea3526b26d082f4461eeea467f10a4"/>
+<files psalm-version="6.4.0@04f312ac6ea48ba1c3e5db4d815bf6d74641c0ee">
+  <file src="src/Plugin.php">
+    <UnusedClass>
+      <code><![CDATA[Plugin]]></code>
+    </UnusedClass>
+  </file>
+  <file src="tests/Valid/NameChanged.php">
+    <PossiblyUnusedMethod>
+      <code><![CDATA[__construct]]></code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="tests/Valid/Profile.php">
+    <PossiblyUnusedMethod>
+      <code><![CDATA[applyProfileCreated]]></code>
+      <code><![CDATA[create]]></code>
+      <code><![CDATA[id]]></code>
+      <code><![CDATA[name]]></code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="tests/Valid/ProfileProjection.php">
+    <PossiblyUnusedParam>
+      <code><![CDATA[$id]]></code>
+    </PossiblyUnusedParam>
+    <UnusedClass>
+      <code><![CDATA[ProfileProjection]]></code>
+    </UnusedClass>
+  </file>
+</files>

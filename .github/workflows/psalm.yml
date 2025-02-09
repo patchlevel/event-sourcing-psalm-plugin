@@ -18,6 +18,7 @@ jobs:
         strategy:
             matrix:
                 dependencies:
+                    - "lowest"
                     - "locked"
                 php-version:
                     - "8.3"
@@ -41,4 +42,9 @@ jobs:
                 dependency-versions: ${{ matrix.dependencies }}
 
             - name: "psalm"
+              if: ${{ matrix.dependencies != 'locked' }}
+              run: "vendor/bin/psalm"
+
+            - name: "psalm"
+              if: ${{ matrix.dependencies == 'locked' }}
               run: "vendor/bin/psalm --shepherd --stats"
