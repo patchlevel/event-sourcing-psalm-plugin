@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Patchlevel\EventSourcingPsalmPlugin;
 
+use Override;
 use Psalm\Plugin\PluginEntryPointInterface;
 use Psalm\Plugin\RegistrationInterface;
 use SimpleXMLElement;
@@ -12,6 +13,7 @@ use function class_exists;
 
 class Plugin implements PluginEntryPointInterface
 {
+    #[Override]
     public function __invoke(RegistrationInterface $registration, SimpleXMLElement|null $config = null): void
     {
         class_exists(SuppressAggregateRoot::class);

@@ -7,7 +7,7 @@ use Patchlevel\EventSourcing\Aggregate\Uuid;
 use Patchlevel\EventSourcing\Attribute\Apply;
 use Patchlevel\EventSourcing\Attribute\Id;
 
-class Profile extends BasicAggregateRoot
+final class Profile extends BasicAggregateRoot
 {
     #[Id]
     private Uuid $id;
