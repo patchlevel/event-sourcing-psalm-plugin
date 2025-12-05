@@ -6,7 +6,7 @@ use Patchlevel\EventSourcing\Aggregate\AggregateRootId;
 use Patchlevel\EventSourcing\Attribute\Subscribe;
 use Patchlevel\EventSourcing\Message\Message;
 
-class ProfileProjection
+final class ProfileProjection
 {
     #[Subscribe(ProfileCreated::class)]
     public function handleProfileCreated(Message $message): void

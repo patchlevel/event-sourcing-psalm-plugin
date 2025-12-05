@@ -2,7 +2,7 @@
 
 namespace Patchlevel\EventSourcingPsalmPlugin\Tests\Valid;
 
-class NameChanged
+final class NameChanged
 {
     public function __construct(
         public readonly string $name

@@ -12,9 +12,10 @@ phpcs-check: vendor                                                             
 phpcs-fix: vendor                                                               ## run phpcs fixer
 	vendor/bin/phpcbf
 
-.PHONY: phpstan
-phpstan: vendor                                                                 ## run phpstan static code analyser
-	vendor/bin/phpstan analyse
+.PHONY: cs
+cs: vendor                                                                      ## run phpcs fixer
+	vendor/bin/phpcbf || true
+	vendor/bin/phpcs
 
 .PHONY: psalm
 psalm: vendor                                                                   ## run psalm static code analyser
@@ -24,14 +25,7 @@ psalm: vendor                                                                   
 psalm-baseline: vendor                                                          ## run psalm static code analyser
 	vendor/bin/psalm --update-baseline --set-baseline=baseline.xml
 
-.PHONY: phpunit
-phpunit: vendor                                                                 ## run phpunit tests
-	vendor/bin/phpunit --testdox --colors=always -v $(OPTIONS)
-
 .PHONY: static
-static: psalm phpstan phpcs-check                                               ## run static analyser
+static: psalm phpcs-check                                               ## run static analyser
 
-test: phpunit                                                                   ## run tests
-
-.PHONY: dev
-dev: static test                                                                ## run dev tools
+test: psalm                                                                   ## run tests

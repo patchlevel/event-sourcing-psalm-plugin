@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Patchlevel\EventSourcingPsalmPlugin;
 
+use Override;
 use Patchlevel\EventSourcing\Aggregate\AggregateRoot;
 use Psalm\Plugin\EventHandler\AfterClassLikeVisitInterface;
 use Psalm\Plugin\EventHandler\Event\AfterClassLikeVisitEvent;
@@ -12,6 +13,7 @@ use function is_a;
 
 class SuppressAggregateRoot implements AfterClassLikeVisitInterface
 {
+    #[Override]
     public static function afterClassLikeVisit(AfterClassLikeVisitEvent $event): void
     {
         $storage = $event->getStorage();

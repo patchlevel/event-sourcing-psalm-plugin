@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Patchlevel\EventSourcingPsalmPlugin;
 
+use Override;
 use Patchlevel\EventSourcing\Attribute\Subscribe;
 use Patchlevel\EventSourcing\Message\Message;
 use Psalm\Plugin\EventHandler\AfterClassLikeVisitInterface;
@@ -16,6 +17,7 @@ use function array_values;
 
 class SubscribeAttribute implements AfterClassLikeVisitInterface
 {
+    #[Override]
     public static function afterClassLikeVisit(AfterClassLikeVisitEvent $event): void
     {
         $storage = $event->getStorage();
