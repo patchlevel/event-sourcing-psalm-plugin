@@ -3145,16 +3145,16 @@
         },
         {
             "name": "vimeo/psalm",
-            "version": "6.14.3",
+            "version": "6.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vimeo/psalm.git",
-                "reference": "d0b040a91f280f071c1abcb1b77ce3822058725a"
+                "reference": "204d06619833a297b402cbc66be7f2df74437db4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vimeo/psalm/zipball/d0b040a91f280f071c1abcb1b77ce3822058725a",
-                "reference": "d0b040a91f280f071c1abcb1b77ce3822058725a",
+                "url": "https://api.github.com/repos/vimeo/psalm/zipball/204d06619833a297b402cbc66be7f2df74437db4",
+                "reference": "204d06619833a297b402cbc66be7f2df74437db4",
                 "shasum": ""
             },
             "require": {
@@ -3259,7 +3259,7 @@
                 "issues": "https://github.com/vimeo/psalm/issues",
                 "source": "https://github.com/vimeo/psalm"
             },
-            "time": "2025-12-23T15:36:48+00:00"
+            "time": "2026-01-30T13:53:17+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -3327,16 +3327,16 @@
     "packages-dev": [
         {
             "name": "brick/math",
-            "version": "0.14.1",
+            "version": "0.14.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brick/math.git",
-                "reference": "f05858549e5f9d7bb45875a75583240a38a281d0"
+                "reference": "55c950aa71a2cabc1d8f2bec1f8a7020bd244aa2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brick/math/zipball/f05858549e5f9d7bb45875a75583240a38a281d0",
-                "reference": "f05858549e5f9d7bb45875a75583240a38a281d0",
+                "url": "https://api.github.com/repos/brick/math/zipball/55c950aa71a2cabc1d8f2bec1f8a7020bd244aa2",
+                "reference": "55c950aa71a2cabc1d8f2bec1f8a7020bd244aa2",
                 "shasum": ""
             },
             "require": {
@@ -3375,7 +3375,7 @@
             ],
             "support": {
                 "issues": "https://github.com/brick/math/issues",
-                "source": "https://github.com/brick/math/tree/0.14.1"
+                "source": "https://github.com/brick/math/tree/0.14.2"
             },
             "funding": [
                 {
@@ -3383,7 +3383,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-11-24T14:40:29+00:00"
+            "time": "2026-01-30T14:03:11+00:00"
         },
         {
             "name": "dealerdirect/phpcodesniffer-composer-installer",
@@ -3589,16 +3589,16 @@
         },
         {
             "name": "doctrine/event-manager",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/event-manager.git",
-                "reference": "c07799fcf5ad362050960a0fd068dded40b1e312"
+                "reference": "dda33921b198841ca8dbad2eaa5d4d34769d18cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/event-manager/zipball/c07799fcf5ad362050960a0fd068dded40b1e312",
-                "reference": "c07799fcf5ad362050960a0fd068dded40b1e312",
+                "url": "https://api.github.com/repos/doctrine/event-manager/zipball/dda33921b198841ca8dbad2eaa5d4d34769d18cf",
+                "reference": "dda33921b198841ca8dbad2eaa5d4d34769d18cf",
                 "shasum": ""
             },
             "require": {
@@ -3660,7 +3660,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/event-manager/issues",
-                "source": "https://github.com/doctrine/event-manager/tree/2.1.0"
+                "source": "https://github.com/doctrine/event-manager/tree/2.1.1"
             },
             "funding": [
                 {
@@ -3676,7 +3676,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-01-17T22:40:21+00:00"
+            "time": "2026-01-29T07:11:08+00:00"
         },
         {
             "name": "doctrine/migrations",
@@ -4399,12 +4399,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "c4162b6092bc6170cc6d0758ba6ee7d29d0dfbb8"
+                "reference": "8457f2008fc6396be788162c4e04228028306534"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/c4162b6092bc6170cc6d0758ba6ee7d29d0dfbb8",
-                "reference": "c4162b6092bc6170cc6d0758ba6ee7d29d0dfbb8",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/8457f2008fc6396be788162c4e04228028306534",
+                "reference": "8457f2008fc6396be788162c4e04228028306534",
                 "shasum": ""
             },
             "conflict": {
@@ -5034,6 +5034,7 @@
                 "processwire/processwire": "<=3.0.246",
                 "propel/propel": ">=2.0.0.0-alpha1,<=2.0.0.0-alpha7",
                 "propel/propel1": ">=1,<=1.7.1",
+                "psy/psysh": "<=0.11.22|>=0.12,<=0.12.18",
                 "pterodactyl/panel": "<1.12",
                 "ptheofan/yii2-statemachine": ">=2.0.0.0-RC1-dev,<=2",
                 "ptrofimov/beanstalk_console": "<1.7.14",
@@ -5405,7 +5406,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-01-28T22:08:32+00:00"
+            "time": "2026-01-30T22:06:58+00:00"
         },
         {
             "name": "slevomat/coding-standard",
