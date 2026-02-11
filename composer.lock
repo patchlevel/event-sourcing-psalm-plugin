@@ -3339,16 +3339,16 @@
     "packages-dev": [
         {
             "name": "brick/math",
-            "version": "0.14.7",
+            "version": "0.14.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brick/math.git",
-                "reference": "07ff363b16ef8aca9692bba3be9e73fe63f34e50"
+                "reference": "63422359a44b7f06cae63c3b429b59e8efcc0629"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brick/math/zipball/07ff363b16ef8aca9692bba3be9e73fe63f34e50",
-                "reference": "07ff363b16ef8aca9692bba3be9e73fe63f34e50",
+                "url": "https://api.github.com/repos/brick/math/zipball/63422359a44b7f06cae63c3b429b59e8efcc0629",
+                "reference": "63422359a44b7f06cae63c3b429b59e8efcc0629",
                 "shasum": ""
             },
             "require": {
@@ -3387,7 +3387,7 @@
             ],
             "support": {
                 "issues": "https://github.com/brick/math/issues",
-                "source": "https://github.com/brick/math/tree/0.14.7"
+                "source": "https://github.com/brick/math/tree/0.14.8"
             },
             "funding": [
                 {
@@ -3395,7 +3395,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-02-07T10:57:35+00:00"
+            "time": "2026-02-10T14:33:43+00:00"
         },
         {
             "name": "dealerdirect/phpcodesniffer-composer-installer",
@@ -3850,16 +3850,16 @@
         },
         {
             "name": "patchlevel/event-sourcing",
-            "version": "3.15.0",
+            "version": "3.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/patchlevel/event-sourcing.git",
-                "reference": "71cb083baf3d9b5e80a12e646dc788b02b2d170a"
+                "reference": "52f45dc409791184cdb942eb89ad5cad960f0419"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/patchlevel/event-sourcing/zipball/71cb083baf3d9b5e80a12e646dc788b02b2d170a",
-                "reference": "71cb083baf3d9b5e80a12e646dc788b02b2d170a",
+                "url": "https://api.github.com/repos/patchlevel/event-sourcing/zipball/52f45dc409791184cdb942eb89ad5cad960f0419",
+                "reference": "52f45dc409791184cdb942eb89ad5cad960f0419",
                 "shasum": ""
             },
             "require": {
@@ -3925,9 +3925,9 @@
             ],
             "support": {
                 "issues": "https://github.com/patchlevel/event-sourcing/issues",
-                "source": "https://github.com/patchlevel/event-sourcing/tree/3.15.0"
+                "source": "https://github.com/patchlevel/event-sourcing/tree/3.16.0"
             },
-            "time": "2026-01-07T00:39:09+00:00"
+            "time": "2026-02-10T11:38:30+00:00"
         },
         {
             "name": "patchlevel/hydrator",
@@ -4411,12 +4411,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "495dd245daf97837671d36aabe17849edfb1e7b1"
+                "reference": "0c751a6ae38247a99675c8210d6a9d570314c87f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/495dd245daf97837671d36aabe17849edfb1e7b1",
-                "reference": "495dd245daf97837671d36aabe17849edfb1e7b1",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/0c751a6ae38247a99675c8210d6a9d570314c87f",
+                "reference": "0c751a6ae38247a99675c8210d6a9d570314c87f",
                 "shasum": ""
             },
             "conflict": {
@@ -4714,6 +4714,7 @@
                 "friendsoftypo3/mediace": ">=7.6.2,<7.6.5",
                 "friendsoftypo3/openid": ">=4.5,<4.5.31|>=4.7,<4.7.16|>=6,<6.0.11|>=6.1,<6.1.6",
                 "froala/wysiwyg-editor": "<=4.3",
+                "frosh/adminer-platform": "<2.2.1",
                 "froxlor/froxlor": "<=2.2.5",
                 "frozennode/administrator": "<=5.0.12",
                 "fuel/core": "<1.8.1",
@@ -5294,7 +5295,7 @@
                 "vertexvaar/falsftp": "<0.2.6",
                 "villagedefrance/opencart-overclocked": "<=1.11.1",
                 "vova07/yii2-fileapi-widget": "<0.1.9",
-                "vrana/adminer": "<=4.8.1",
+                "vrana/adminer": "<5.4.2",
                 "vufind/vufind": ">=2,<9.1.1",
                 "waldhacker/hcaptcha": "<2.1.2",
                 "wallabag/tcpdf": "<6.2.22",
@@ -5423,7 +5424,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-02-09T22:13:28+00:00"
+            "time": "2026-02-10T00:36:12+00:00"
         },
         {
             "name": "slevomat/coding-standard",
