@@ -3850,16 +3850,16 @@
         },
         {
             "name": "patchlevel/event-sourcing",
-            "version": "3.17.0",
+            "version": "3.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/patchlevel/event-sourcing.git",
-                "reference": "e037b5184dbaf6c25d7b8e9ca848355c0bdf4a6d"
+                "reference": "d17688b827baaa87626fb5fc3f9d58faa47a13d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/patchlevel/event-sourcing/zipball/e037b5184dbaf6c25d7b8e9ca848355c0bdf4a6d",
-                "reference": "e037b5184dbaf6c25d7b8e9ca848355c0bdf4a6d",
+                "url": "https://api.github.com/repos/patchlevel/event-sourcing/zipball/d17688b827baaa87626fb5fc3f9d58faa47a13d2",
+                "reference": "d17688b827baaa87626fb5fc3f9d58faa47a13d2",
                 "shasum": ""
             },
             "require": {
@@ -3925,9 +3925,9 @@
             ],
             "support": {
                 "issues": "https://github.com/patchlevel/event-sourcing/issues",
-                "source": "https://github.com/patchlevel/event-sourcing/tree/3.17.0"
+                "source": "https://github.com/patchlevel/event-sourcing/tree/3.18.0"
             },
-            "time": "2026-02-17T21:08:05+00:00"
+            "time": "2026-02-23T09:53:37+00:00"
         },
         {
             "name": "patchlevel/hydrator",
