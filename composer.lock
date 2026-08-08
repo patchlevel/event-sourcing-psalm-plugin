@@ -2343,16 +2343,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v8.1.2",
+            "version": "v8.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "535e18a1b8925f6c01a55b171d157ab66c2ace15"
+                "reference": "68efa2ebfd9a362951eb5a8b09fd177c66ddec24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/535e18a1b8925f6c01a55b171d157ab66c2ace15",
-                "reference": "535e18a1b8925f6c01a55b171d157ab66c2ace15",
+                "url": "https://api.github.com/repos/symfony/console/zipball/68efa2ebfd9a362951eb5a8b09fd177c66ddec24",
+                "reference": "68efa2ebfd9a362951eb5a8b09fd177c66ddec24",
                 "shasum": ""
             },
             "require": {
@@ -2419,7 +2419,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v8.1.2"
+                "source": "https://github.com/symfony/console/tree/v8.1.4"
             },
             "funding": [
                 {
@@ -2439,7 +2439,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-07-27T13:58:19+00:00"
+            "time": "2026-07-31T12:43:13+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -4526,12 +4526,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "dd51bbf2083143b3cbb2c1469cc3c091a9c67e8f"
+                "reference": "f4f38b8750fb0db0242fb03d4727517e3611da8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/dd51bbf2083143b3cbb2c1469cc3c091a9c67e8f",
-                "reference": "dd51bbf2083143b3cbb2c1469cc3c091a9c67e8f",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/f4f38b8750fb0db0242fb03d4727517e3611da8b",
+                "reference": "f4f38b8750fb0db0242fb03d4727517e3611da8b",
                 "shasum": ""
             },
             "conflict": {
@@ -4572,7 +4572,7 @@
                 "aoe/restler": "<1.7.1",
                 "apache-solr-for-typo3/solr": "<2.8.3",
                 "apereo/phpcas": "<1.6",
-                "api-platform/core": "<4.1.29|>=4.2,<4.2.25|>=4.3,<4.3.8",
+                "api-platform/core": "<4.1.30|>=4.2,<4.2.26|>=4.3,<4.3.12",
                 "api-platform/graphql": "<3.4.17|>=4,<4.0.22|>=4.1,<4.1.5",
                 "api-platform/hal": ">=4,<4.1.29|>=4.2,<4.2.25|>=4.3,<4.3.8",
                 "api-platform/json-api": ">=4,<4.1.29|>=4.2,<4.2.25|>=4.3,<4.3.8",
@@ -4661,7 +4661,7 @@
                 "code16/sharp": "<9.22.3",
                 "codeception/codeception": "<3.1.3|>=4,<4.1.22",
                 "codeigniter/framework": "<3.1.10",
-                "codeigniter4/framework": "<4.7.2",
+                "codeigniter4/framework": "<4.7.4",
                 "codeigniter4/shield": "<1.0.0.0-beta8",
                 "codiad/codiad": "<=2.8.4",
                 "codingms/additional-tca": ">=1.7,<1.15.17|>=1.16,<1.16.9",
@@ -5319,7 +5319,7 @@
                 "slim/psr7": "<1.4.1|>=1.5,<1.5.1|>=1.6,<1.6.1",
                 "slim/slim": "<2.6|>=4.4,<=4.15.1",
                 "slub/slub-events": "<3.0.3",
-                "smarty/smarty": "<4.5.3|>=5,<5.1.1",
+                "smarty/smarty": "<4.5.7|>=5,<5.8.4",
                 "snipe/snipe-it": "<=8.6.1",
                 "socalnick/scn-social-auth": "<1.15.2",
                 "socialiteproviders/steam": "<1.1",
@@ -5643,7 +5643,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-08-06T23:57:53+00:00"
+            "time": "2026-08-07T18:55:46+00:00"
         },
         {
             "name": "slevomat/coding-standard",
@@ -6260,16 +6260,16 @@
         },
         {
             "name": "symfony/var-exporter",
-            "version": "v8.1.3",
+            "version": "v8.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-exporter.git",
-                "reference": "766dac532a04d8980b4d83183fd3d1ea284bac11"
+                "reference": "6efa89335ab6d336643a807fcc89ae4f8a7a17e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-exporter/zipball/766dac532a04d8980b4d83183fd3d1ea284bac11",
-                "reference": "766dac532a04d8980b4d83183fd3d1ea284bac11",
+                "url": "https://api.github.com/repos/symfony/var-exporter/zipball/6efa89335ab6d336643a807fcc89ae4f8a7a17e9",
+                "reference": "6efa89335ab6d336643a807fcc89ae4f8a7a17e9",
                 "shasum": ""
             },
             "require": {
@@ -6319,7 +6319,7 @@
                 "serialize"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-exporter/tree/v8.1.3"
+                "source": "https://github.com/symfony/var-exporter/tree/v8.1.4"
             },
             "funding": [
                 {
@@ -6339,7 +6339,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-07-29T16:43:23+00:00"
+            "time": "2026-07-30T12:40:56+00:00"
         }
     ],
     "aliases": [],
